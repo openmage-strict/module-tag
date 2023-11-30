@@ -73,6 +73,8 @@ class Mage_Tag_Model_Resource_Popular_Collection extends Mage_Core_Model_Resourc
      * @param bool $printQuery
      * @param bool $logQuery
      * @return $this
+     *
+     * @SuppressWarnings(PHPMD.BooleanArgumentFlag)
      */
     public function load($printQuery = false, $logQuery = false)
     {

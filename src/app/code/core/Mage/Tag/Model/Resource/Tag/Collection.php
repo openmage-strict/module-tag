@@ -18,6 +18,8 @@
  *
  * @category   Mage
  * @package    Mage_Tag
+ *
+ * @SuppressWarnings(PHPMD.TooManyPublicMethods)
  */
 class Mage_Tag_Model_Resource_Tag_Collection extends Mage_Core_Model_Resource_Db_Collection_Abstract
 {
@@ -61,6 +63,8 @@ class Mage_Tag_Model_Resource_Tag_Collection extends Mage_Core_Model_Resource_Db
      * @param bool $printQuery
      * @param bool $logQuery
      * @return $this
+     *
+     * @SuppressWarnings(PHPMD.BooleanArgumentFlag)
      */
     public function load($printQuery = false, $logQuery = false)
     {
@@ -93,10 +97,11 @@ class Mage_Tag_Model_Resource_Tag_Collection extends Mage_Core_Model_Resource_Db
      * Get flag's status about joined table.
      * getFlag method must be used in future.
      *
-     * @deprecated after 1.3.2.3
-     *
      * @param string $table
      * @return bool
+     * @deprecated after 1.3.2.3
+     *
+     * @SuppressWarnings(PHPMD.BooleanGetMethodName)
      */
     public function getJoinFlag($table)
     {
@@ -287,9 +292,11 @@ class Mage_Tag_Model_Resource_Tag_Collection extends Mage_Core_Model_Resource_Db
     /**
      * Add filter by store
      *
-     * @param array | int $storeId
+     * @param array|int $storeId
      * @param bool $allFilter
      * @return $this
+     *
+     * @SuppressWarnings(PHPMD.BooleanArgumentFlag)
      */
     public function addStoreFilter($storeId, $allFilter = true)
     {

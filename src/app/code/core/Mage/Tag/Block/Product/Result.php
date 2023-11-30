@@ -132,6 +132,8 @@ class Mage_Tag_Block_Product_Result extends Mage_Catalog_Block_Product_Abstract
 
     /**
      * @return bool
+     *
+     * @SuppressWarnings(PHPMD.BooleanGetMethodName)
      */
     public function getSubheaderText()
     {

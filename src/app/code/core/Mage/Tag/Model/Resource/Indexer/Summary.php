@@ -18,6 +18,8 @@
  *
  * @category   Mage
  * @package    Mage_Tag
+ *
+ * @SuppressWarnings(PHPMD.ExcessiveMethodLength)
  */
 class Mage_Tag_Model_Resource_Indexer_Summary extends Mage_Catalog_Model_Resource_Product_Indexer_Abstract
 {

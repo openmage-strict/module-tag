@@ -101,6 +101,8 @@ class Mage_Tag_Model_Tag extends Mage_Core_Model_Abstract
      *
      * @param bool $flag
      * @return $this
+     *
+     * @SuppressWarnings(PHPMD.BooleanArgumentFlag)
      */
     public function setAddBasePopularity($flag = true)
     {
@@ -112,6 +114,8 @@ class Mage_Tag_Model_Tag extends Mage_Core_Model_Abstract
      * Getter for addBasePopularity flag
      *
      * @return bool
+     *
+     * @SuppressWarnings(PHPMD.BooleanGetMethodName)
      */
     public function getAddBasePopularity()
     {
@@ -354,6 +358,8 @@ class Mage_Tag_Model_Tag extends Mage_Core_Model_Abstract
      * @param int $customerId
      * @param int $storeId
      * @return string - relation add status
+     *
+     * @SuppressWarnings(PHPMD.CyclomaticComplexity)
      */
     public function saveRelation($productId, $customerId, $storeId)
     {

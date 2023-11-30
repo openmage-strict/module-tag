@@ -59,7 +59,9 @@ class Mage_Tag_Model_Entity_Customer_Collection extends Mage_Customer_Model_Enti
     /**
      * @param bool $printQuery
      * @param bool $logQuery
-     * @return $this|Mage_Eav_Model_Entity_Collection_Abstract
+     * @return $this
+     *
+     * @SuppressWarnings(PHPMD.BooleanArgumentFlag)
      */
     public function load($printQuery = false, $logQuery = false)
     {
@@ -72,6 +74,8 @@ class Mage_Tag_Model_Entity_Customer_Collection extends Mage_Customer_Model_Enti
      * @param bool $printQuery
      * @param bool $logQuery
      * @return $this
+     *
+     * @SuppressWarnings(PHPMD.BooleanArgumentFlag)
      */
     protected function _loadTags($printQuery = false, $logQuery = false)
     {
@@ -96,7 +100,7 @@ class Mage_Tag_Model_Entity_Customer_Collection extends Mage_Customer_Model_Enti
             if (!isset($tags[ $row['customer_id'] ])) {
                 $tags[ $row['customer_id'] ] = [];
             }
-            $tags[ $row['customer_id'] ][] = $row;
+            $tags[$row['customer_id']][] = $row;
         }
         foreach ($this->getItems() as $item) {
             if (isset($tags[$item->getId()])) {

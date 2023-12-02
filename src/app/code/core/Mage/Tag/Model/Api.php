@@ -107,8 +107,8 @@ class Mage_Tag_Model_Api extends Mage_Catalog_Model_Api_Resource
             $this->_fault('customer_not_exists');
         }
         $storeId = $this->_getStoreId($data['store']);
-
         $result = [];
+
         try {
             /** @var Mage_Tag_Model_Tag $tag */
             $tag = Mage::getModel('tag/tag');

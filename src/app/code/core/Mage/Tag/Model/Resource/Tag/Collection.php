@@ -28,21 +28,21 @@ class Mage_Tag_Model_Resource_Tag_Collection extends Mage_Core_Model_Resource_Db
      *
      * @var bool
      */
-    protected $_isStoreFilter  = false;
+    protected $_isStoreFilter = false;
 
     /**
      * Joined tables
      *
      * @var array
      */
-    protected $_joinFlags      = [];
+    protected $_joinFlags = [];
 
     /**
      * Mapping for fields
      *
      * @var array
      */
-    public $_map               = [
+    public $_map = [
         'fields' => [
             'tag_id' => 'main_table.tag_id'
         ],
@@ -50,7 +50,6 @@ class Mage_Tag_Model_Resource_Tag_Collection extends Mage_Core_Model_Resource_Db
 
     /**
      * Define resource model and model
-     *
      */
     protected function _construct()
     {
@@ -97,9 +96,10 @@ class Mage_Tag_Model_Resource_Tag_Collection extends Mage_Core_Model_Resource_Db
      * Get flag's status about joined table.
      * getFlag method must be used in future.
      *
+     * @deprecated after 1.3.2.3
+     *
      * @param string $table
      * @return bool
-     * @deprecated after 1.3.2.3
      *
      * @SuppressWarnings(PHPMD.BooleanGetMethodName)
      */
@@ -292,7 +292,7 @@ class Mage_Tag_Model_Resource_Tag_Collection extends Mage_Core_Model_Resource_Db
     /**
      * Add filter by store
      *
-     * @param array|int $storeId
+     * @param array | int $storeId
      * @param bool $allFilter
      * @return $this
      *

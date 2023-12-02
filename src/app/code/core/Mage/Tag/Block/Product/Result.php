@@ -120,7 +120,7 @@ class Mage_Tag_Block_Product_Result extends Mage_Catalog_Block_Product_Abstract
     }
 
     /**
-     * @return bool|string
+     * @return string|false
      */
     public function getHeaderText()
     {

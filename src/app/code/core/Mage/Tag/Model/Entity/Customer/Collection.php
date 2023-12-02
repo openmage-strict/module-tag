@@ -100,7 +100,7 @@ class Mage_Tag_Model_Entity_Customer_Collection extends Mage_Customer_Model_Enti
             if (!isset($tags[ $row['customer_id'] ])) {
                 $tags[ $row['customer_id'] ] = [];
             }
-            $tags[$row['customer_id']][] = $row;
+            $tags[ $row['customer_id'] ][] = $row;
         }
         foreach ($this->getItems() as $item) {
             if (isset($tags[$item->getId()])) {

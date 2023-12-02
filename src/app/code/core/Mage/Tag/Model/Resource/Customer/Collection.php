@@ -76,11 +76,12 @@ class Mage_Tag_Model_Resource_Customer_Collection extends Mage_Customer_Model_Re
      * Get flag's status about joined table.
      * getFlag method must be used in future.
      *
+     * @deprecated after 1.3.2.3
+     *
      * @param string $table
      * @return bool
      *
      * @SuppressWarnings(PHPMD.BooleanGetMethodName)
-     * @deprecated after 1.3.2.3
      */
     public function getJoinFlag($table)
     {
@@ -272,7 +273,7 @@ class Mage_Tag_Model_Resource_Customer_Collection extends Mage_Customer_Model_Re
     {
         $productsId   = [];
         $productsData = [];
-        $productsSku  = [];
+        $productsSku = [];
 
         foreach ($this->getItems() as $item) {
             $productsId[] = $item->getProductId();

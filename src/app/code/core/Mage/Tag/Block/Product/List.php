@@ -51,6 +51,7 @@ class Mage_Tag_Block_Product_List extends Mage_Core_Block_Template
      */
     public function getProductId()
     {
+        /** @var Mage_Catalog_Model_Product $product */
         if ($product = Mage::registry('current_product')) {
             return $product->getId();
         }
